@@ -10,25 +10,25 @@ import Box from '@mui/material/Box';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 
-const PersonalDetails = ({ setCurrentSection }) => {
+const EducationalDetails = ({ setCurrentSection }) => {
   return (
     <>
         <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
             <LockOutlinedIcon />
         </Avatar>
         <Typography component="h1" variant="h5">
-            Student Details
+            Personal Details
         </Typography>
         <Box component="form" noValidate  sx={{ mt: 3 }} marginBottom={10}>
             <Grid container spacing={2}>
                 <Grid item xs={12} >
                 <TextField
-                    autoComplete="given-name"
-                    name="firstName"
+                    autoComplete="full-name"
+                    name="fullName"
                     required
                     fullWidth
-                    id="firstName"
-                    label="First Name"
+                    id="fullName"
+                    label="Full Name of the Student (in Sinhala, as per Birth Certificate)"
                     autoFocus
                 />
                 </Grid>
@@ -36,9 +36,9 @@ const PersonalDetails = ({ setCurrentSection }) => {
                 <TextField
                     required
                     fullWidth
-                    id="lastName"
-                    label="Last Name"
-                    name="lastName"
+                    id="surname"
+                    label="Surname in English"
+                    name="surname"
                     autoComplete="family-name"
                 />
                 </Grid>
@@ -46,10 +46,9 @@ const PersonalDetails = ({ setCurrentSection }) => {
                 <TextField
                     required
                     fullWidth
-                    id="studentId"
-                    label="Student ID"
-                    name="studentId"
-                    autoComplete="studentId"
+                    id="initials"
+                    label=" Initials in English"
+                    name="initials"
                 />
                 </Grid>
                 <Grid item xs={12}>
@@ -68,24 +67,15 @@ const PersonalDetails = ({ setCurrentSection }) => {
                 <Grid item xs={12}>
                     <FormLabel id="gender">Gender</FormLabel>
                     <RadioGroup
-                    row
-                    aria-labelledby="gender"
-                    name="gender"
-                    >
-                    <FormControlLabel value="female" control={<Radio />} label="Female" />
-                    <FormControlLabel value="male" control={<Radio />} label="Male" />
-                    <FormControlLabel value="other" control={<Radio />} label="Other" />
+                        row
+                        aria-labelledby="gender"
+                        name="gender"
+                        >
+                        <FormControlLabel value="female" control={<Radio />} label="Female" />
+                        <FormControlLabel value="male" control={<Radio />} label="Male" />
+                        <FormControlLabel value="other" control={<Radio />} label="Other" />
                     </RadioGroup>
                 </Grid>
-                <Grid item xs={12} >
-                <TextField
-                    name="school"
-                    fullWidth
-                    id="school"
-                    label="School"
-                    autoFocus
-                />
-                </Grid>   
             </Grid>
 
             <Grid container spacing={2}>
@@ -116,4 +106,4 @@ const PersonalDetails = ({ setCurrentSection }) => {
   )
 }
 
-export default PersonalDetails
+export default EducationalDetails 

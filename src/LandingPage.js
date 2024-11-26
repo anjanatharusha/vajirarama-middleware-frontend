@@ -22,11 +22,14 @@ import getLPTheme from './getLPTheme';
 import getVJTheme from './getVJTheme';
 import SignIn from './components/SignIn';
 import SignUp from './components/SignUp';
-import LibraryMembership from './components/RegistrationForms/LibraryMembership';
+
+// Registration
+import Registration from './components/RegistrationForms/Registration';
 import OpenMembership from './components/RegistrationForms/OpenMembership';
 import StudentMembership from './components/RegistrationForms/StudentMembership';
 import BhikkuMembership from './components/RegistrationForms/BhikkuMembership';
 import LibraryStaffRegistration from './components/RegistrationForms/LibraryStaffRegistration';
+import DhammaSchoolRegistration from './components/RegistrationForms/DhammaSchoolRegistration';
 
 function ToggleCustomTheme({ showCustomTheme, toggleCustomTheme }) {
   return (
@@ -94,11 +97,12 @@ export default function LandingPage() {
       <Routes>
         <Route path="/" element={<Hero />} />
         <Route path="/signin" element={<SignIn />} />
-        <Route path="/register" element={<LibraryMembership />} />
+        <Route path="/register" element={<Registration />} />
         <Route path="/register/open-membership" element={<OpenMembership />} />
         <Route path="/register/student-membership" element={<StudentMembership />} />
         <Route path="/register/bhikku-membership" element={<BhikkuMembership />} />
         <Route path="/register/library-staff" element={<LibraryStaffRegistration />} />
+        <Route path="/register/dhamma-school-student" element={<DhammaSchoolRegistration />} />
       </Routes>
 
       {/* <Box sx={{ bgcolor: 'background.default' }}>

@@ -21,6 +21,29 @@ const LibraryMembership = () => {
           }}
         >
             <Typography component="h5" variant="h5">
+                Dhamma School Student Registration
+            </Typography>
+
+            <NavLink to="/register/dhamma-school-student">
+                <Button
+                    fullWidth
+                    variant="contained"
+                    sx={{ mt: 2}}
+                    >
+                        Register as Dhamma School Student
+                </Button>
+            </NavLink>
+        </Box>
+
+        <Box
+          sx={{
+            marginTop: 8,
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+          }}
+        >
+            <Typography component="h5" variant="h5">
                 Library User Membership
             </Typography>
 
@@ -28,7 +51,7 @@ const LibraryMembership = () => {
                 <Button
                     fullWidth
                     variant="contained"
-                    sx={{ mt: 5}}
+                    sx={{ mt: 2}}
                     >
                         Apply for Open Membership
                 </Button>
@@ -38,7 +61,7 @@ const LibraryMembership = () => {
                 <Button
                     fullWidth
                     variant="contained"
-                    sx={{ mt: 5}}
+                    sx={{ mt: 3}}
                     >
                         Apply for Student Membership
                 </Button>
@@ -48,7 +71,7 @@ const LibraryMembership = () => {
                 <Button
                     fullWidth
                     variant="contained"
-                    sx={{ mt: 5}}
+                    sx={{ mt: 3}}
                     >
                         Apply for Bhikku Membership
                 </Button>
@@ -57,7 +80,8 @@ const LibraryMembership = () => {
 
         <Box
           sx={{
-            marginTop: 20,
+            marginTop: 8,
+            marginBottom: 10,
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
@@ -71,7 +95,7 @@ const LibraryMembership = () => {
                 <Button
                     fullWidth
                     variant="contained"
-                    sx={{ mt: 5}}
+                    sx={{ mt: 2}}
                     >
                         Apply for Library Staff Membership
                 </Button>

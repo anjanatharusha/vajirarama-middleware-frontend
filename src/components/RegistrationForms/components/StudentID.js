@@ -31,7 +31,7 @@ const NIC = ({ setCurrentSection }) => {
             <Typography component="h1" variant="h5">
                 Prove Your Identity
             </Typography>
-            <Box component="form" noValidate sx={{ mt: 3 }}>
+            <Box component="form" noValidate sx={{ mt: 3 }} marginBottom={10}>
                 <Grid container spacing={2}>
                     <Grid item xs={12}>
                         <TextField
